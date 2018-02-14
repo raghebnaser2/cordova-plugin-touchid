@@ -6,7 +6,7 @@
 #import <Cordova/CDVPlugin.h>
 
 @interface TouchID : CDVPlugin
-
+- (void) isAvailable:(CDVInvokedUrlCommand*)command;
 - (void) authenticate:(CDVInvokedUrlCommand*)command;
 - (void) checkSupport:(CDVInvokedUrlCommand*)command;
 
