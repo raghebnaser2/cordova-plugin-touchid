@@ -11,7 +11,9 @@ TouchID.prototype.authenticate = function (successCallback, errorCallback, text)
     }
     exec(successCallback, errorCallback, "TouchID", "authenticate", [text]);
 };
-
+TouchID.prototype.isAvailable = function (successCallback, errorCallback) {
+  exec(successCallback, errorCallback, "TouchID", "isAvailable", []);
+};
 TouchID.prototype.checkSupport = function (successCallback, errorCallback) {
  
     exec(successCallback, errorCallback, "TouchID", "checkSupport", []);
